@@ -12,6 +12,6 @@ class MailController extends Controller
     {
         $objDemo = new \stdClass();
         $objDemo->number = $request;
-        Mail::to("info@andplatonov.com")->send(new DemoEmail($objDemo));
+        Mail::to("o.popova@andplatonov.com")->send(new DemoEmail($objDemo));
     }
 }

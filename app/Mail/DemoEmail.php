@@ -35,7 +35,7 @@ class DemoEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('indo@andplatonov.com')
+        return $this->from('info@andplatonov.com')
             ->view('mail.demo');
     }
 }
