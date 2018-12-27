@@ -46,7 +46,6 @@ class BenchConversation extends Conversation
         $this->MaskCount = 0;
         $this->BuzoCount = 0;
         $this->AkinCount = 0;
-        Log::info(print_r($this->bot->getUser(), true));
         $this->data = [];
         $this->quizQuestions = Question::all();
         $this->questionCount = $this->quizQuestions->count();
