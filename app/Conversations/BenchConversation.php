@@ -134,13 +134,13 @@ class BenchConversation extends Conversation
         $url = '';
 
         if($name == 'Филипп Киркоров'){
-            $url = 'https://3f6e4e8f.ngrok.io/image/fill.jpg';
+            $url = 'https://officesanta.ru/newyear/image/fill.jpg';
         }else if($name == 'Илон Маск'){
-            $url = 'https://3f6e4e8f.ngrok.io/image/mask.jpg';
+            $url = 'https://officesanta.ru/newyear/image/mask.jpg';
         }else if($name == 'Ольга Бузова'){
-            $url = 'https://3f6e4e8f.ngrok.io/image/buzo.jpg';
+            $url = 'https://officesanta.ru/newyear/image/buzo.jpg';
         }else if($name == 'Нога Акинфеева'){
-            $url = 'https://3f6e4e8f.ngrok.io/image/akin.jpg';
+            $url = 'https://officesanta.ru/newyear/image/akin.jpg';
         }
 
         $attachment = new Image($url);
