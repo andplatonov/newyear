@@ -9,8 +9,10 @@ use App\Http\Middleware\TypingMiddleware;
 
 $botman = resolve('botman');
 
-$typingMiddleware = new TypingMiddleware();
-$botman->middleware->sending($typingMiddleware);
+if($botman->driverStorage()->getDefaultKey() == 'Telegram'){
+    $typingMiddleware = new TypingMiddleware();
+    $botman->middleware->sending($typingMiddleware);
+}
 
 $botman->hears('Hi', function ($bot) {
     $bot->reply('Hello!');
